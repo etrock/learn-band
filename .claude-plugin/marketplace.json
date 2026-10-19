@@ -1,0 +1,6 @@
+{
+  "name": "etrock-mods",
+  "description": "Claude Code mods by Sipos Dávid Dániel: learn-band, a learning card above the prompt.",
+  "owner": { "name": "Sipos Dávid Dániel" },
+  "plugins": [{ "name": "learn-band", "source": "./" }]
+}

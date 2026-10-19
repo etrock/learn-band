@@ -1,0 +1,36 @@
+{
+  "name": "learn-band",
+  "version": "0.1.0",
+  "description": "A learning card above the prompt: teaches one thing from the code you just edited, your project, framework, language or system design after every editing turn, and on /learn any time.",
+  "author": {
+    "name": "Sipos Dávid Dániel"
+  },
+  "homepage": "https://github.com/etrock/learn-band",
+  "repository": "https://github.com/etrock/learn-band",
+  "license": "MIT",
+  "keywords": ["learning", "mentor", "band", "above-prompt"],
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "model": {
+      "type": "string",
+      "title": "Model",
+      "description": "Which model writes the learning card.",
+      "default": "sonnet",
+      "options": [
+        "haiku",
+        "sonnet",
+        "opus"
+      ]
+    },
+    "language": {
+      "type": "string",
+      "title": "Language",
+      "description": "Language of the card and of the band UI (hu = Hungarian, en = English).",
+      "default": "hu",
+      "options": [
+        "hu",
+        "en"
+      ]
+    }
+  }
+}
