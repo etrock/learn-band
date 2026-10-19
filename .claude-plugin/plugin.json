@@ -26,7 +26,7 @@
       "type": "string",
       "title": "Language",
       "description": "Language of the card and of the band UI (hu = Hungarian, en = English).",
-      "default": "hu",
+      "default": "en",
       "options": [
         "hu",
         "en"

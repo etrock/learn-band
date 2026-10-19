@@ -175,7 +175,7 @@ type Context = {
 
 const ctx: Context = {
   model: 'sonnet',
-  language: 'hu',
+  language: 'en',
   projectContext: '',
   touched: [],
   touchedChars: 0,
@@ -317,7 +317,7 @@ function startGenerate($: EngineInterface, request: GenerateRequest): void {
 
 export const register: Register = (on, options) => {
   ctx.model = String(options.model ?? 'sonnet')
-  ctx.language = String(options.language ?? 'hu')
+  ctx.language = String(options.language ?? 'en')
   ctx.touched = []
   ctx.touchedChars = 0
   ctx.lastPrompt = ''

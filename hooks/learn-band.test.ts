@@ -32,7 +32,7 @@ const BAND = {
 const RUN = { origin: { kind: 'composer' }, presentation: { isFullscreen: false, columns: 120 } } as const
 const CARD = '# Mongo összetett index\n\nAz első mondat. A második mondat.\n\n**Próbáld ki:** nézd meg az explain() kimenetét.'
 
-test('/learn <kategória> kér egy kártyát és a sáv megmutatja', async ($, on) => {
+test('/learn <kategória> kér egy kártyát és a sáv megmutatja', { options: { language: 'hu' } }, async ($, on) => {
   boot(on)
   mock.store(on)
   const clock = mock.clock(on)
@@ -77,7 +77,7 @@ test('/learn <kategória> kér egy kártyát és a sáv megmutatja', async ($, o
   await ui.unmount()
 })
 
-test('szabad téma és a korábbi címek a promptban', async ($, on) => {
+test('szabad téma és a korábbi címek a promptban', { options: { language: 'hu' } }, async ($, on) => {
   boot(on)
   mock.store(on, { history: [{ title: 'Régi cím', category: 'nyelv', at: 1 }] })
   const clock = mock.clock(on)

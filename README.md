@@ -59,7 +59,7 @@ Open `/config` and look for the plugin's section:
 | Setting    | Values                     | Default  | Meaning                                                |
 | ---------- | -------------------------- | -------- | ------------------------------------------------------ |
 | `model`    | `haiku`, `sonnet`, `opus`  | `sonnet` | Which model writes the card.                           |
-| `language` | `hu`, `en`                 | `hu`     | Language of the card, the band, the buttons and toasts. |
+| `language` | `hu`, `en`                 | `en`     | Language of the card, the band, the buttons and toasts. |
 
 ## What leaves your machine, and cost
 
